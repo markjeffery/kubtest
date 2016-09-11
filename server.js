@@ -1,3 +1,5 @@
+var os = require("os");
+var hostname = os.hostname();
 require("appdynamics").profile({
   controllerHostName: 'se-demo-uk.demo.appdynamics.com',
   controllerPort: 80, 
@@ -5,7 +7,7 @@ require("appdynamics").profile({
   accountAccessKey: '322e0fe1-11b0-4d5a-9a01-e674c656e089',
   applicationName: 'kubtest',
   tierName: 'node', 
-  nodeName: 'process', 
+  nodeName: hostname, 
  });
 var http = require('http');
 var handleRequest = function(request, response) {
