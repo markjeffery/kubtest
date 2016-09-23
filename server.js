@@ -1,10 +1,10 @@
 var os = require("os");
 var hostname = os.hostname();
 require("appdynamics").profile({
-  controllerHostName: 'se-demo-uk.demo.appdynamics.com',
-  controllerPort: 80, 
+  controllerHostName: '10.0.0.1',
+  controllerPort: 8090, 
   accountName: 'customer1',
-  accountAccessKey: '322e0fe1-11b0-4d5a-9a01-e674c656e089',
+  accountAccessKey: '8d59389c-2bb9-4fc1-b495-90016f453d8c',
   applicationName: 'kubtest',
   tierName: 'node', 
   nodeName: hostname, 
