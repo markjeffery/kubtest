@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/markjeffery/kubtest#readme",
   "dependencies": {
-    "appdynamics": "^4.2.6",
+    "appdynamics": "^4.2.5",
     "http": "0.0.0",
     "request": "^2.75.0"
   }
