@@ -1,0 +1,30 @@
+{
+  "name": "kubtest",
+  "version": "1.0.0",
+  "description": "Test node js app for docker and kubernetes",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markjeffery/kubtest.git"
+  },
+  "keywords": [
+    "kubernetes",
+    "docker",
+    "nodejs"
+  ],
+  "author": "Mark Jeffery",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markjeffery/kubtest/issues"
+  },
+  "homepage": "https://github.com/markjeffery/kubtest#readme",
+  "dependencies": {
+    "appdynamics": "^4.2.6",
+    "http": "0.0.0",
+    "request": "^2.75.0"
+  }
+}
