@@ -1,5 +1,5 @@
 FROM node:4.4
-EXPOSE 8080
+EXPOSE 5000
 ADD server.js .
 ADD package.json .
 ADD app.json .
