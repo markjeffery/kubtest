@@ -7,6 +7,6 @@ ADD assets/ assets/
 ADD routes/ routes/
 ADD www/ www/
 ADD app.json .
-ADD unregister.sh
+ADD unregister.sh .
 RUN npm install
 CMD node server.js
