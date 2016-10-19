@@ -67,7 +67,8 @@ app.get('/weather', function(req, res){
 
 
 app.get('/realweather', function(req, res) {
-    
+   
+    console.log("weather"); 
     //var location = 'London';
     var location = req.query.geo;
     if (!location)
@@ -100,7 +101,7 @@ app.get('/realweather', function(req, res) {
 }) 
 
 
-app.set('port', process.env.PORT || 5000);
+app.set('port', process.env.PORT || 5010);
 
 app.listen(app.get('port'), function () {
     console.log('Express server listening on port ' + app.get('port'));

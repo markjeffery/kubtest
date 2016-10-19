@@ -1,5 +1,5 @@
 #!/bin/sh
-
+set -x
 set -e
 
 # temporary directory for script-related files
@@ -93,6 +93,10 @@ case "$1" in
             --data '' \
             "http://${controller_host}:${controller_port}/controller/rest/mark-nodes-historical?application-component-node-ids=$node_index"
         ;;
+    sendevent)
+        curl -s --user "$userstring" \
+            --data '' 
+            "http://${controller_host}:${controller_port}/controller/rest/applications/${index}/events\?severity=INFO&summary=Node $node_names removed&eventtype=CUSTOM&customeventtype=kubernetes&node=$node_names&tier=${APPDYNAMICS_AGENT_TIER_NAME}"
     *)
         echo "usage: $(basename $0) getId | unregister"
 esac
