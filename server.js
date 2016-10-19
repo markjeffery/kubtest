@@ -68,7 +68,6 @@ app.get('/weather', function(req, res){
 
 app.get('/realweather', function(req, res) {
    
-    console.log("weather"); 
     //var location = 'London';
     var location = req.query.geo;
     if (!location)
@@ -77,6 +76,7 @@ app.get('/realweather', function(req, res) {
     }
     var weather;
 
+    console.log("weather going to URL: " + externalWebService)
     var httpAddress = externalWebService;
     http.request(httpAddress, function(response) {
 

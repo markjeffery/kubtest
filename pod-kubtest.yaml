@@ -15,7 +15,7 @@ spec:
       - name: kubtest
         image: "markjeffery/kubtest:release-master"
         ports:
-        - containerPort: 5000
+        - containerPort: 5010
         imagePullPolicy: Always
         env:
         - name: "APPDYNAMICS_CONTROLLER_HOST_NAME"
@@ -31,7 +31,7 @@ spec:
         - name: "APPDYNAMICS_AGENT_TIER_NAME"
           value: "Node"
         - name: "EXTERNAL_WEB_SERVICE"
-          value: "http://10.64.10.33:55474/MyAccounts/0"
+          value: "http://10.0.1.51:62400/MyAccounts/0"
         lifecycle:
           preStop:
             exec:
