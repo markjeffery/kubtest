@@ -1,6 +1,6 @@
 FROM node:4.4
 EXPOSE 5010
-EXPOSE 5000vi 
+EXPOSE 5000
 ADD server.js .
 ADD package.json .
 ADD app.json .
