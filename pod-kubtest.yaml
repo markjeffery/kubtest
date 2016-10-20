@@ -19,19 +19,19 @@ spec:
         imagePullPolicy: Always
         env:
         - name: "APPDYNAMICS_CONTROLLER_HOST_NAME"
-          value: "se-demo-uk.demo.appdynamics.com"
+          value: "192.168.99.1"
         - name: "APPDYNAMICS_CONTROLLER_PORT"
           value: "8090"
         - name: "APPDYNAMICS_AGENT_ACCOUNT_NAME"
           value: "customer1"
         - name: "APPDYNAMICS_AGENT_ACCOUNT_ACCESS_KEY"
-          value:  "322e0fe1-11b0-4d5a-9a01-e674c656e089"
+          value:  "8d59389c-2bb9-4fc1-b495-90016f453d8c"
         - name: "APPDYNAMICS_AGENT_APPLICATION_NAME"
           value: "kubernetes"
         - name: "APPDYNAMICS_AGENT_TIER_NAME"
           value: "Node"
         - name: "EXTERNAL_WEB_SERVICE"
-          value: "http://10.0.1.51:62400/MyAccounts/0"
+          value: "http://192.168.99.1:63958/MyAccounts/0"
         lifecycle:
           preStop:
             exec:
